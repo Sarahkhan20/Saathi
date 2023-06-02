@@ -1,0 +1,60 @@
+what if I want separate collections for separate login user in my webapp which is made up of reactjs and appwrite
+View other drafts
+
+If you want separate collections for separate login users in your webapp which is made up of ReactJS and Appwrite, you can use the auth service to get the current user's ID. You can then use the collection service to create a new collection with the user's ID as the key. For example:
+Code snippet
+
+const userID = await auth.currentUser();
+const collection = await collection.create({
+  key: userID,
+});
+
+Use code with caution. Learn more
+
+Once you have created the collection, you can use it to store data that is specific to the current user. For example, you could store the user's profile information, or their list of favorite items.
+
+To access the data in the collection, you can use the collection service to get the collection by the user's ID. For example:
+Code snippet
+
+const collection = await collection.get(userID);
+
+Use code with caution. Learn more
+
+Once you have the collection, you can access the data in it using the same methods that you would use for any other collection. For example, you could get the user's profile information by calling collection.get('profile').
+
+Here is an example of how you could use the auth and collection services to create separate collections for separate login users:
+Code snippet
+
+const Appwrite = require('appwrite');
+
+const appwrite = new Appwrite({
+  projectId: '<YOUR_PROJECT_ID>',
+  apiKey: '<YOUR_API_KEY>',
+});
+
+const auth = appwrite.auth();
+const collection = appwrite.collection();
+
+async function main() {
+  // Get the current user's ID.
+  const userID = await auth.currentUser();
+
+  // Create a new collection with the user's ID as the key.
+  const collection = await collection.create({
+    key: userID,
+  });
+
+  // Store the user's profile information in the collection.
+  await collection.set('profile', {
+    name: 'John Doe',
+    email: 'johndoe@example.com',
+  });
+
+  // Get the user's profile information from the collection.
+  const profile = await collection.get('profile');
+
+  // Print the user's profile information.
+  console.log(profile);
+}
+
+main().catch(console.error);

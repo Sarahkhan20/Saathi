@@ -1,5 +1,5 @@
 import { Query } from "appwrite";
-import {  databases } from "../../services/appwriteConfig";
+import {  databases,account } from "../../services/appwriteConfig";
 import React, { useState, useEffect } from "react";
 import {  useNavigate } from 'react-router-dom'
 import Navbar from "../../components/navbar/Navbar";
@@ -18,6 +18,9 @@ const QuizCard = () => {
   const updateID = id[0].toString()
   console.log(updateID)
   const navigate = useNavigate();
+  const [userDetails, setUserDetails] = useState();
+  useState();
+       const userID = userDetails;
    const nextQuestion = () => {
     if (index < questions.length && options.length - 1) {
       setIndex(index + 1);
@@ -26,23 +29,19 @@ const QuizCard = () => {
       navigate('/')
     }
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const promise = databases.createDocument("6475bc41d08143bd0b2e", "6477c45dbbca449075e2", ID.unique(), {
-      answer
-    })
-
-    promise.then(
-      function (response) {
-        console.log(response);
-        
-      },
-      function (error) {
-        console.log(error);
-      })
-
-  }
-  
+ 
+  // getting userID 
+  useEffect( () => {
+              const getData = account.get();
+              getData.then(
+                     function (response) {
+                            setUserDetails(response.$id)
+                     },
+                     function (error) {
+                            console.log(error);
+                     }
+              )
+       }, [userDetails]);
   
        useEffect(() => {
               const getQuestion = databases.listDocuments("6475bc41d08143bd0b2e", "6475bc4f578738f63e3c",);
@@ -59,6 +58,24 @@ const QuizCard = () => {
        
        }, [])
   console.log(id);
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    const promise = databases.createDocument("6475bc41d08143bd0b2e", "6477c45dbbca449075e2", ID.unique(), {
+      answer, userID
+      
+    })
+    console.log(userID);
+
+    promise.then(
+      function (response) {
+        console.log(response);
+        
+      },
+      function (error) {
+        console.log(error);
+      })
+
+  }
    
  
   const currentQuestion = questions[index] || {};
