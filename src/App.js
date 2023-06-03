@@ -7,6 +7,7 @@ import "./App.css";
 import Welcome from "./screens/findflatmates/Welcome";
 import Profile from "./screens/profile/Profile";
 import QuizCard from "./screens/quiz/Quiz";
+import PostFlat from "./screens/post_flat/PostFlat";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/welcomepage" element={<Welcome />} />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/quiz" element={<QuizCard />} />
+                    <Route path="/postflat" element={<PostFlat />} />
                 </Routes>
             </BrowserRouter>
         </div>
