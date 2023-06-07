@@ -26,7 +26,7 @@ const QuizCard = () => {
       setIndex(index + 1);
     } else {
       console.log("no more questions");
-      navigate('/')
+      navigate('/profile')
     }
   };
  

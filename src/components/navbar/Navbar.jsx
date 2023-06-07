@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="nav_links">
         <ul>
           <li><a href="/findflats">Find Flats</a></li>
-          <li><a href="/findflatmates">Find Flatmates</a></li>
+          <li><a href="/signup">Find Flatmates</a></li>
           <li><a href="/postflat">Post Flat</a></li>
         <li><a href="/aboutus">About Us</a></li>
          <li><a href="/FAQ">FAQs</a></li>

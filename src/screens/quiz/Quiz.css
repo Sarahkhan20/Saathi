@@ -39,8 +39,7 @@
 .quiz_option2,
 .quiz_option3,
 .quiz_option5,
-.quiz_option4,
-label {
+.quiz_option4 {
     font-family: "Lato";
     font-style: normal;
     font-weight: 700;

@@ -1,4 +1,4 @@
-import { Client, Account, Databases } from "appwrite";
+import { Client, Account, Databases, Storage } from "appwrite";
 const client = new Client();
 
 client
@@ -7,3 +7,4 @@ client
 
 export const account = new Account(client);
 export const databases = new Databases(client, "6475bc41d08143bd0b2e");
+export const storage = new Storage(client);
