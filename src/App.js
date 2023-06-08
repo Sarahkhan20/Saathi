@@ -8,6 +8,9 @@ import Welcome from "./screens/findflatmates/Welcome";
 import Profile from "./screens/profile/Profile";
 import QuizCard from "./screens/quiz/Quiz";
 import PostFlat from "./screens/post_flat/PostFlat";
+import FindFlats from "./screens/findflats/FindFlats";
+import FlatDeets from "./screens/flatdeets/FlatDeets";
+import MatchedUsers from "./screens/matchedUsers/MatchedUsers";
 
 function App() {
     return (
@@ -21,6 +24,9 @@ function App() {
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/quiz" element={<QuizCard />} />
                     <Route path="/postflat" element={<PostFlat />} />
+                    <Route path="/findflat" element={<FindFlats />} />
+                    <Route path="/flatdeets" element={<FlatDeets />} />
+                    <Route path="/matchedusers" element={<MatchedUsers />} />
                 </Routes>
             </BrowserRouter>
         </div>

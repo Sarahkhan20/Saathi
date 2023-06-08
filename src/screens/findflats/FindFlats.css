@@ -1,0 +1,21 @@
+.flatandmap {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+.flatsmap {
+    width: 20rem;
+    height: 20rem;
+}
+.flatsphoto {
+    width: 431.75px;
+    height: 291.84px;
+    border-radius: 8px;
+}
+.flatsphotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    gap: 1rem;
+    margin-left: 1rem;
+}

@@ -11,9 +11,13 @@ import container1 from '../../assets/container1.svg'
 import container2 from '../../assets/container2.svg'
 import container3 from '../../assets/container3.svg'
 import Footer from '../../components/footer/Footer'
+import { account } from '../../services/appwriteConfig'
+
 
 
 const Landing = () => {
+  const chutiya = account.getSession("current");
+  console.log(chutiya);
   const [animation, setAnimation] = useState([
     { src: LP1 },
     // { src: LP2 },
