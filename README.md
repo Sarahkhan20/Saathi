@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+## Saathi - Your Companion for Finding Flats and Roommates
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Saathi is a web app designed to be your companion when you're new to a city, especially catering to the Indian audience. It aims to connect people with their preferred roommates and flats that fit their budget.
 
-## Available Scripts
+### Motivation
 
-In the project directory, you can run:
+While there are many websites available in India for finding rented flats, Saathi goes beyond that. Being wanted to create a platform that not only helps you find a place to live but also enables you to find your perfect flatmate. As I like to call it the "Tinder to find your perfect flatmate."
 
-### `npm start`
+### How Saathi Works
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Saathi takes a unique approach by asking users a series of questions through a quiz. Based on their responses, a matching profile is created, showcasing the characteristics and preferences they have in common with potential roommates. Users themselves have a profile created based on the quiz, providing them with personalized recommendations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Feedback-Driven and Scalable
 
-### `npm test`
+I believe in the power of user feedback. My goal is to continually improve Saathi based on the feedback received. I am aiming to make Saathi a scalable product that addresses the needs of the Indian market effectively.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+With Saathi, you no longer have to worry about finding a flat or roommates in a new city. 
