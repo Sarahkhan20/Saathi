@@ -124,3 +124,23 @@
     justify-content: center;
     gap: 5px;
 }
+.profileinfo_container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    /* or 120% */
+    display: flex;
+    align-items: center;
+
+    color: blue;
+}
+a {
+    text-decoration: none;
+}

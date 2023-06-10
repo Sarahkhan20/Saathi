@@ -89,7 +89,7 @@ const Profile = () => {
                 <Navbar/>
                 <div className="quiz_mid_container">
                        <div className="quiz_mid_container_back">
-                     <div className="quiz_mid_container_back_circle"> <img src={GoBack} alt="" srcset="" /></div>  Go back
+                     <div className="quiz_mid_container_back_circle"> <img src={GoBack} alt="" srcset="" /></div> <a href="./matchedUsers">Go back</a> 
                        </div>
 <div className="quiz_mid_profileinfo">
                               <div className="profileinfo_container">
@@ -127,19 +127,19 @@ const Profile = () => {
                                             <div className="branch">
                                             <img src={Books} alt="" srcset="" /> Majoring in Information Technoloy</div></div>
                                      <div className="profileinfo_container4">
-                                           <h4> Interesting Facts  </h4>
+                                           <h3> Interesting Facts  </h3>
                
          {Profile.map((profile) => (
-        <div key={profile.$id}>
-          <h4>{profile.answer ? modifyAnswer(profile.answer) : ''}</h4>
+        <div key={profile.$id} >
+          <h4 className='letsdivide'>{profile.answer ? modifyAnswer(profile.answer) : ''}</h4>
         </div>
          ))}  
                                      </div>
                                      <div className="profileinfo_container5">
-                                            <h4>Hobbies</h4>
+                                   
                                             
                                      </div>
-                                     <div className="profileinfo_container6"><h4>Compatibility Preference</h4></div>
+                                     <div className="profileinfo_container6"><h3>Compatibility Preference</h3></div>
                               </div>
                        </div>  
                        </div>

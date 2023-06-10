@@ -1,9 +1,10 @@
 import React,{useState} from 'react'
 import './signuppage.css'
 import { account }  from '../../services/appwriteConfig'
+import { useNavigate } from 'react-router-dom'
+import bestie from '../../assets/bestie.png'
+import logo from '../../assets/logo.svg'
 
-import {  useNavigate } from 'react-router-dom'
-// import { Navigate } from 'react-router-dom';
 
 
 const SignupPage = () => {
@@ -36,37 +37,54 @@ const SignupPage = () => {
   };
   return (
     <div className="signup_page">
+      <div className="signup_extrainfo">
+       
+        
+        <img src={logo} alt="" srcset="" />
+         <div className="signup_tagline">
+           Discover the Perfect Harmony:Saathi - Your Trusted Flats and Flatmates Hub
+        </div>
+        <div className="signup_bestie"><img src={bestie} alt=""  /></div>
+        
+       
+      </div>
+      <div className="signup_box"> <h2 className="create_account">Create Account</h2>
       <div className="signup_container">
+       
         <form action="" >
           <div className="signup_name">
-          <label htmlFor="name">Name</label>
-            <input type="text" onChange={(e) => {
+          
+            <input type="text" placeholder='Full Name' onChange={(e) => {
               setUserDetails({
                 ...userDetails,
                 name : e.target.value
               })}} />
           </div>
           <div className="signup_email">
-          <label htmlFor="Email">Email</label>
-            <input type="email" onChange={(e) => {
+          
+            <input type="email" placeholder='Email' onChange={(e) => {
               setUserDetails({
                 ...userDetails,
                 email : e.target.value
               })}} />
           </div>
           <div className="signup_password">
-          <label htmlFor="">password</label>
-            <input type="password" onChange={(e) => {
+        
+            <input type="password" placeholder= 'Password' onChange={(e) => {
               setUserDetails({
                 ...userDetails,
                 password : e.target.value
               })}} />
           </div>
           <div className="signup_button">
-            <button onClick={(e)=> signupUser(e)} type='submit'>Sign Up</button>
+            <button onClick={(e)=> signupUser(e)} type='submit'>Create Account</button>
+          </div>
+          <div className="ask_login">
+            Already have an account? <a href="./login">Login</a> 
           </div>
         </form>
-      </div>
+        </div>
+        </div>
     </div>
   )
 }

@@ -11,7 +11,7 @@ const Navbar = () => {
       {/* links */}
       <div className="nav_links">
         <ul>
-          <li><a href="/findflats">Find Flats</a></li>
+          <li><a href="/findflat">Find Flats</a></li>
           <li><a href="/signup">Find Flatmates</a></li>
           <li><a href="/postflat">Post Flat</a></li>
         <li><a href="/aboutus">About Us</a></li>

@@ -1,0 +1,59 @@
+.matchedUsersMid {
+    display: flex;
+    height: 450px;
+}
+.ProfilePicha {
+    width: 38px;
+    height: 37px;
+    border-radius: 100px;
+}
+.part1MU {
+    margin-left: 2rem;
+}
+.part1MU a {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #242424;
+    margin-left: 7px;
+}
+.part3MU h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    color: #352ea4;
+}
+.part1MU a:hover {
+    color: #4977ff;
+}
+.part1MU a:active {
+    color: #4977ff;
+}
+.part2MU {
+    margin-left: 4rem;
+    width: 60%;
+}
+.request button {
+    width: 73px;
+    height: 22px;
+    left: 122px;
+    top: 0px;
+    color: white;
+    background-color: #0185d7;
+    border-radius: 5px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+}
+.match_info {
+    display: flex;
+    gap: 4rem;
+    margin-left: 20px;
+}

@@ -74,7 +74,8 @@ const Checkbox = ({ amenity, isChecked, onToggle }) => {
    const navigate = useNavigate();
 
    const handleSubmit = async (e) => {
-          e.preventDefault();
+      e.preventDefault();
+      navigate('./findflat');
           const promise = databases.createDocument("647beff6d2bb278e1166", "6480bea54aea6eb0543b", ID.unique(), {
              propType, roomType, gender, occupation,bedsAvail, rent, area, minstay, city, address, phonenum 
           })

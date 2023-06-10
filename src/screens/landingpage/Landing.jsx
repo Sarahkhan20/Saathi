@@ -12,23 +12,28 @@ import container2 from '../../assets/container2.svg'
 import container3 from '../../assets/container3.svg'
 import Footer from '../../components/footer/Footer'
 import { account } from '../../services/appwriteConfig'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const Landing = () => {
-  const chutiya = account.getSession("current");
-  console.log(chutiya);
+  const navigate = useNavigate();
   const [animation, setAnimation] = useState([
     { src: LP1 },
-    // { src: LP2 },
-    // { src: LP3 }
+    
   ]);
-  // const handleChange = () => {
-  //   setAnimation([
-  //     ...animation.slice(1),
-  //     animation[0],
-  //   ]);
-  // };
+  const handleSignUp = () => {
+    navigate('/signup');
+  };
+  const handleFlat = () => {
+    navigate('/findflat');
+  };
+  const handleFlatmate = () => {
+    navigate('/findflatmates');
+  };
+  const handlePost = () => {
+    navigate('/postflat');
+  };
   return (
     <div>
       <Navbar />
@@ -44,7 +49,7 @@ const Landing = () => {
           <div className="CTA_head">New To a city ? We Got You Covered!</div> 
           <div className="CTA_text">Sign in for a more personalized experience</div>
       
-          <button className='CTA_button'>Sign Up</button>
+          <button className='CTA_button' onClick={handleSignUp}>Sign Up</button>
         </div>
         <div className="midLP_right">
           <img src={LP_right1} alt="" srcset="" />
@@ -60,7 +65,7 @@ const Landing = () => {
          <div className="lowLP_container_text">
             Find your perfect flat with Saathi's extensive collection of verified listings and immersive photo experience.
             </div>
-            <button className="lowLP_container_button">Browse Flats</button>
+            <button className="lowLP_container_button" onClick={handleFlat}>Browse Flats</button>
             </div>
           </div>
         <div className="lowLP_container2">
@@ -72,7 +77,7 @@ const Landing = () => {
           <div className="lowLP_container_text">
             Looking for the perfect flatmate? We've got you covered. Our platform connects you with like-minded individuals based on your preferences.
             </div>
-            <button className="lowLP_container_button">Find roommate</button>
+            <button className="lowLP_container_button" onClick={handleFlatmate}>Find roommate</button>
             </div>
           </div>
         <div className="lowLP_container3">
@@ -84,7 +89,7 @@ const Landing = () => {
           <div className="lowLP_container_text">
             Ready to rent out your property? Post your flat on our platform and reach a wider audience of potential tenants.
             </div>
-            <button className="lowLP_container_button">Post a Flat</button>
+            <button className="lowLP_container_button" onClick={handlePost}>Post a Flat</button>
           </div>
           </div>
       </div>
