@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: center;
 }
+.Request_tour {
+    cursor: pointer;
+}
 .flat_deets {
     display: flex;
     flex-direction: col;

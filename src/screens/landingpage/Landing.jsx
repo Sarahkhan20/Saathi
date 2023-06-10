@@ -29,7 +29,7 @@ const Landing = () => {
     navigate('/findflat');
   };
   const handleFlatmate = () => {
-    navigate('/findflatmates');
+    navigate('/quiz');
   };
   const handlePost = () => {
     navigate('/postflat');

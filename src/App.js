@@ -11,6 +11,7 @@ import PostFlat from "./screens/post_flat/PostFlat";
 import FindFlats from "./screens/findflats/FindFlats";
 import FlatDeets from "./screens/flatdeets/FlatDeets";
 import MatchedUsers from "./screens/matchedUsers/MatchedUsers";
+import { Quiz } from "@mui/icons-material";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                     <Route path="/findflat" element={<FindFlats />} />
                     <Route path="/flatdeets" element={<FlatDeets />} />
                     <Route path="/matchedusers" element={<MatchedUsers />} />
+                    <Route path="/findflatmates" element={<Quiz />} />
                 </Routes>
             </BrowserRouter>
         </div>

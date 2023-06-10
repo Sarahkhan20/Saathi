@@ -6,6 +6,7 @@ import { databases, storage } from '../../services/appwriteConfig';
 import { LocalLaundryService, LocalParking, NetworkWifi } from "@mui/icons-material";
 import Map from '../../components/map/Map';
 import './FlatDeets.css'
+import mailto from 'mailto-link';
 
 const FlatDeets = () => {
   const location = useLocation();
@@ -48,6 +49,16 @@ const FlatDeets = () => {
   const getFilePreview = (file) => {
     return storage.getFilePreview("6480d843935646ed03ca", flatId);
   };
+ const handleRequestTour = () => {
+  const email = 'sarah@gmail.com';
+  const subject = 'Requesting a Tour';
+  const body = 'Dear, I would like to request a tour. Please provide me with the details.';
+
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+  window.location.href = mailtoLink;
+};
+
 
   return (
     <div>
@@ -101,7 +112,7 @@ const FlatDeets = () => {
               <div className="contact_reviews">
                 <div className="contact">
                <h2> Contact This Owner</h2>
-                <button className='Request_tour'>Request Tour</button>
+                  <button className='Request_tour' onClick={ handleRequestTour}>Request Tour</button>
                 <button className='Request_vidcall'>Request Video Call</button>
                 <p>{detail.deet.phonenum }</p>
                 </div>
