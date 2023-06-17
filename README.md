@@ -18,6 +18,11 @@ I believe in the power of user feedback. My goal is to continually improve Saath
 
 With Saathi, you no longer have to worry about finding a flat or roommates in a new city. 
 
-[![Demo](https://youtu.be/QlGnG02JtQo)](https://youtu.be/QlGnG02JtQo)
+### Demo
+
+
+
+https://github.com/Sarahkhan20/Saathi/assets/98898049/52e0313c-4518-40ee-bc4f-1f3bdf5d0913
+
 
 
