@@ -18,6 +18,14 @@ I believe in the power of user feedback. My goal is to continually improve Saath
 
 With Saathi, you no longer have to worry about finding a flat or roommates in a new city. 
 
+### Setup
+
+        cd/Saathi
+
+        npm i
+
+        npm start
+
 ### Demo
 
 
