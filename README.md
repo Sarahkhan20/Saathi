@@ -29,8 +29,7 @@ With Saathi, you no longer have to worry about finding a flat or roommates in a 
 ### Demo
 
 
-
-[https://github.com/Sarahkhan20/Saathi/assets/98898049/52e0313c-4518-40ee-bc4f-1f3bdf5d0913](https://www.youtube.com/watch?v=QlGnG02JtQo)
+[![Watch the video](https://img.youtube.com/vi/QlGnG02JtQo/0.jpg)](https://www.youtube.com/watch?v=QlGnG02JtQo)
 
 
 
