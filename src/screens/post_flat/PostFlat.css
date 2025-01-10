@@ -1,0 +1,86 @@
+.postflat-container {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.postflat-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.flat-group {
+    padding: 1rem 1.5rem;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+    padding-bottom: 0.5rem;
+}
+
+.label-pop {
+    cursor: pointer;
+    line-height: 30px;
+    height: 100%;
+    width: max-content;
+    margin-right: 5px;
+    padding: 0 10px;
+    border: 2px solid #5047fe;
+    border-radius: 1em;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.flat-group input[type="checkbox"]:checked + label,
+.flat-group input[type="file"] + label,
+.flat-group input[type="radio"]:checked + label,
+.flat-group label:hover {
+    color: #fff;
+    background-color: #5047fe;
+}
+
+.input-hide {
+    display: none;
+}
+
+.flat-group fieldset {
+    border: none;
+    padding-bottom: 0.5rem;
+}
+
+.age-p {
+    padding-top: 1rem;
+}
+
+.input-ok {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.flat-but {
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #6a11cb;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.flat-but:hover {
+    background-color: #aaa5ff;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}

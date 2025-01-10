@@ -1,0 +1,88 @@
+.login_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    /* width: 50%; */
+    height: 100%;
+    background: #ffffff;
+    border-radius: 47px;
+    box-shadow: white 10px 0px 2px 15px;
+}
+.login_box {
+    width: 60%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 47px;
+    box-shadow: white 10px 0px 2px 15px;
+}
+.login_box h2 {
+    margin-top: 5rem;
+    margin-left: 7rem;
+    position: absolute;
+}
+.login_page {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa5ff;
+    overflow: hidden;
+}
+.login_extrainfo {
+    width: 50%;
+    background-color: #aaa5ff;
+    height: 100%;
+}
+.login_tagline {
+    width: 312px;
+    height: 221px;
+    margin-left: 55px;
+    margin-top: 50px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+}
+.login_bestie img {
+    width: 420px;
+    height: 370px;
+    margin-left: 7rem;
+    position: absolute;
+    padding-bottom: 5rem;
+}
+.login_container input {
+    width: 513px;
+    height: 57px;
+    left: 773px;
+    top: 463px;
+    border: 0;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 35px;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.08em;
+}
+.login_container button {
+    width: 513px;
+    height: 57px;
+    background: #542ea4;
+    border-radius: 5px;
+    /* text */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}

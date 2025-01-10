@@ -1,0 +1,82 @@
+.quiz_mid {
+    background-color: #aaa5ff;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quiz_question p {
+    color: white;
+
+    width: 606.59px;
+
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+
+    color: #ffffff;
+}
+.quiz_options {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.quiz_option1,
+.quiz_option2,
+.quiz_option3,
+.quiz_option4,
+.quiz_option5 {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    width: 660px;
+    height: 46px;
+}
+.quiz_option1,
+.quiz_option2,
+.quiz_option3,
+.quiz_option5,
+.quiz_option4 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.quiz_submit button {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 118.91px;
+    height: 48px;
+    right: 541.4px;
+
+    background: #ffffff;
+    border-radius: 30px;
+}
+.quiz_submit text {
+    position: absolute;
+    width: 75.71px;
+    height: 21.6px;
+    left: 21.6px;
+    top: 13px;
+
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* identical to box height, or 122% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #352ea4;
+}

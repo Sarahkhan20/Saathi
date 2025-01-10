@@ -1,0 +1,48 @@
+.welcome_page {
+    width: 100%;
+    height: 703.4px;
+    background: #aaa5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    gap: 2rem;
+    color: #ffffff;
+}
+.welcome_page_buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+}
+.welcome_page_continue {
+    box-sizing: border-box;
+    width: 300px;
+    height: 48px;
+    left: 374.4px;
+    top: 549px;
+
+    background: #ffffff;
+    box-shadow: 0px 5px 14px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #068088;
+}
+.welcome_page_skip {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    color: #068088;
+}
